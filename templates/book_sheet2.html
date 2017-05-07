@@ -1,0 +1,21 @@
+<div class="container site-wrap esp">
+     <ul class="list-group">
+        <li class="list-group-item" ng-init="Data={'title':'El Juego de Ender','editorial': 'Ediciones B / Zeta','description':'La Tierra está amenazada por una especie extraterrestre de
+        insectos que pretende destruir la humanidad. Para vencerlos se precisa la intervención
+        de un genio militar, por lo cual se permite el nacimiento de Ender, tercer hijo de una
+        pareja en un mundo que limita a dos el número de descendientes. Ender se entrenará en
+        una estación espacial, superará a sus rivales y se convertirá en la persona capaz de
+        dirigir las flotas terrestres contra los insectos de otros mundos.', 'img':'public/img/juegoEnder.jpg','posted': 'Posted on Abril 19, 2015'}">
+         <u><h2 class="text-center text-info">{{Data.title}}</h2></u>
+         <div class="media-left media">
+            <img ng-src="{{Data.img}}" alt="" height="350px;"> 
+            <p><em>{{Data.editorial}}</em></p>    
+         </div>
+         <div class="media-body">
+             <p class="fonthigh">{{Data.description}}</p>
+             <small class="pull-right"><i>{{Data.posted}}</i></small>
+         </div>
+        </li>
+    </ul>
+    <a href="index.html" class="btn btn-primary btn-lg">Back</a>                
+   </div>
