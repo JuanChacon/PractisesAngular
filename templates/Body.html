@@ -1,7 +1,7 @@
 <div class=" container " >
         <form class="form-inline ">
           <label for="" style="margin-top:25px;">Search:</label>
-          <label style="margin-left:25px;" class="" for="focusedInput">Movies:</label>
+          <label style="margin-left:25px;" class="">Movies:</label>
           <input type="text" class="form-control" ng-model="searchBox.title" Placeholder="Whrite to search" style="margin-left:5px; width: 500px;">
           <button class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
           <label for="" style="margin-left:75px;">Order by</label>
@@ -23,7 +23,7 @@
                     </div>
                     <div class=" media-body">
                        <!--<small>{{book.id}}</small>-->
-                       <a href="#" media="media-heading"><p>{{book.title}}  <button class=" btn btn-sm glyphicon glyphicon-trash"  ng-click="removeBook(book)"></button> </p></a>
+                       <a media="media-heading"><p>{{book.title}}  <button class=" btn btn-sm glyphicon glyphicon-trash"  ng-click="removeBook(book)"></button> </p></a>
                        <small class="pull-right" style="margin-top:-25px;"><i>{{book.posted}}</i></small>
                        <h4 class="text-success">{{book.editorial}}</h4> 
                        <p class="text-info" style="margin-top:-10px;">{{book.description}}</p>
@@ -32,3 +32,6 @@
             </li>
         </ul>
     </div> 
+
+
+
