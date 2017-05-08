@@ -4,14 +4,14 @@ var app = angular.module('myApp', ['ngRoute']);
 app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider
-        .when('/body', {
+        .when('/', {
         templateUrl: 'templates/Body.html',
         controller: 'controllerData'
     }).when('/book', {
         templateUrl: 'templates/book_sheet2.html'
         
     }).otherwise({
-        redirectTo: '/body'
+        redirectTo: '/'
     });
 
 }]);

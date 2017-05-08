@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
 <head>
@@ -50,4 +51,58 @@
    <script src="js/script.js"></script> 
    <script src="js/BookStoreApp1.js"></script>          
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <!-- Script AngularJS -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"> </script>
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/angular-route.min.js"></script>
+   <script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+   <script src="js/message.js"></script>
+    <title>REDBOX</title>
+</head>
+<body>
+   <!--<ng-include src="'templates/header.html'"></ng-include>-->
+     <header>
+    <div class="container-fluid">
+    <div class="row chang">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <h1 class="tit">Flander's BOOKS</h1>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 marg">
+        <img src="public/img/redbox.jpg" alt="" height="150px">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 marg">
+        <img src="public/img/flanders.gif" alt="" height="150px">
+    </div>                      
+    </div>
+    </div>
+    </header>
+    <nav id="main">
+    <ul>
+      <li class="logo"><a href="#">Books</a></li>
+      <li><a onclick="welcome()">Home</a></li>
+      <li><a href="#/">About</a></li>
+      <li><a href="#/book">Books of the year</a></li>
+      <li><a href="#">Stores</a></li>
+      <li><a href="#">Contac us</a></li>
+    </ul>
+  </nav>  
+    <ng-view></ng-view>
+    <!--<ng-include src="templates/Body.html"></ng-include>-->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>     
+   <script src="js/script.js"></script> 
+   <script src="js/BookStoreApp1.js"></script>          
+</body>
+>>>>>>> 007590af85b4df3e729783b6ec41091f36876bc8
 </html>
