@@ -23,7 +23,8 @@
                     </div>
                     <div class=" media-body">
                        <!--<small>{{book.id}}</small>-->
-                       <a media="media-heading"><p>{{book.title}}  <button class=" btn btn-sm glyphicon glyphicon-trash"  ng-click="removeBook(book)"></button> </p></a>
+                       <a href="#!/book" media="media-heading"><p>{{book.title}}</p></a>
+                       <button class=" btn btn-sm glyphicon glyphicon-trash"  ng-click="removeBook(book)"></button>
                        <small class="pull-right" style="margin-top:-25px;"><i>{{book.posted}}</i></small>
                        <h4 class="text-success">{{book.editorial}}</h4> 
                        <p class="text-info" style="margin-top:-10px;">{{book.description}}</p>
