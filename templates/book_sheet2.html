@@ -1,11 +1,14 @@
-<div class="container site-wrap esp">
+    <div class="container site-wrap esp">
      <ul class="list-group">
         <li class="list-group-item" ng-init="Data={'title':'El Juego de Ender','editorial': 'Ediciones B / Zeta','description':'La Tierra está amenazada por una especie extraterrestre de
         insectos que pretende destruir la humanidad. Para vencerlos se precisa la intervención
         de un genio militar, por lo cual se permite el nacimiento de Ender, tercer hijo de una
         pareja en un mundo que limita a dos el número de descendientes. Ender se entrenará en
         una estación espacial, superará a sus rivales y se convertirá en la persona capaz de
-        dirigir las flotas terrestres contra los insectos de otros mundos.', 'img':'public/img/juegoEnder.jpg','posted': 'Posted on Abril 19, 2015'}">
+        dirigir las flotas terrestres contra los insectos de otros mundos.', 'img':'public/img/juegoEnder.jpg','posted': 'Posted on Abril 19, 2015',
+        'stars': '3', 
+        'body':'ITS LIKE BLOWN UR MIND',
+        'author':'juan@caliente.com'}">
          <u><h2 class="text-center text-info">{{Data.title}}</h2></u>
          <div class="media-left media">
             <img ng-src="{{Data.img}}" alt="" height="350px;"> 
@@ -17,5 +20,37 @@
          </div>
         </li>
     </ul>
-    <a href="index.html" class="btn btn-primary btn-lg">Back</a>                
-   </div>
+     <div class="container-fluid">
+        <h3 style="color:blue;">Help us with your opinion</h3>
+        <form name= "reviewform"  class="form-horizontal">
+        <blockquote>
+           <b>Stars: {{Data.stars}}</b>
+           {{Data.body }}
+           <cite>by: {{Data.author}}</cite>
+        </blockquote>
+        <div class="form-group">
+           <label for="">Stars:</label>
+           <select class="form-control" required>
+            <option value="1">1 start</option>
+            <option value="2">2 start</option>
+            <option value="3">3 start</option>
+            <option value="4">4 start</option>
+            <option value="5">5 start</option>
+           </select>
+       </div>
+       <div class="form-group">
+          <label for="">Comentary:</label>
+          <textarea cols="30" rows="10"  class="form-control ng-dirty ng-invalid" placeholder="What is this shit" required></textarea>
+       </div>
+       <div class="form-group">
+           <label> By:</label>
+           <input type="email" class="form-control" placeholder= "somebody@yahoo"/>
+      <div>reviewform is {{reviewform.$valid}}</div>
+           <input type="submit" class="btn btn-primary" value="submit"  required />
+      </div> 
+      </form>
+      </div>
+      <a href="index.html" class="btn btn-primary btn-lg">Back</a>                 
+      </div>
+   
+  

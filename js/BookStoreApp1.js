@@ -24,7 +24,7 @@ app.controller('controllerData', ['$scope', '$http', function($scope, $http){
 //Se agrego esta funcion para borrar algun elemento de la lista, esto en caso de que al administrador le digan que se decean borrar libros   
  $scope.removeBook = function(data){
      $scope.data = $scope.data.filter(function (book) {
-         return JSON.stringify(book) !== JSON.stringify(data);
+     return JSON.stringify(book) !== JSON.stringify(data);
      });
      
  };
